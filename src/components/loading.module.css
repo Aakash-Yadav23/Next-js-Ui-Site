@@ -1,0 +1,47 @@
+/* components/SpiralCircleLoader.module.css */
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loader {
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .circle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #007bff;
+    border-radius: 50%;
+    animation: spiral 1s infinite linear;
+  }
+  
+  @keyframes spiral {
+    0% {
+      top: 6px;
+      left: 6px;
+    }
+    25% {
+      top: 6px;
+      left: 38px;
+    }
+    50% {
+      top: 38px;
+      left: 38px;
+    }
+    75% {
+      top: 38px;
+      left: 6px;
+    }
+    100% {
+      top: 6px;
+      left: 6px;
+    }
+  }
+  
